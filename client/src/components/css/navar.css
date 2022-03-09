@@ -1,0 +1,54 @@
+/* .nav {
+    background-color: rgb(218, 145, 93);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem calc((100vw - 1000px) / 3);
+    z-index: 12;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-board {
+    color: black;
+    background-color: #FFC312;
+    width: 120px;
+    height: 35px;
+}
+
+.logout {
+    color: black;
+    font-size: large;
+    height: 35px;
+
+}
+
+.spin {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.board {
+    height: 1000px;
+    width: 100%;
+    background-image: url('https://miro.medium.com/max/1200/0*gXCa4nExBtEOTNBU.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif;
+    align-content: center;
+} */

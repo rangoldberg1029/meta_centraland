@@ -1,0 +1,150 @@
+.container {
+    position: fixed;
+    top: 2%;
+    right: 35%;
+    transform: 'transform(-50%,-50%)';
+    z-index: 1000;
+    width: 450px;
+    height: 520px;
+}
+
+
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+
+.cardcontainer {
+    width: 450px;
+    height: 520px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s
+}
+
+.cardcontainer:hover {
+    box-shadow: 0 0 45px red
+}
+
+.photo {
+    height: 200px;
+    width: 100%
+}
+
+.photo img {
+    height: 100%;
+    width: 100%
+}
+
+.content {
+    width: 40%;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -33px
+}
+
+.photos {
+    width: 150px;
+    height: 30px;
+    background-color: #E74C3C;
+    color: white;
+    position: relative;
+    top: -30px;
+    padding-left: 10px;
+    font-size: 20px
+}
+
+.txt4 {
+    font-size: 27px;
+    position: relative;
+    top: 30px;
+
+}
+
+.txt5 {
+    position: relative;
+    top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 70%;
+}
+
+.txt2 {
+    position: relative;
+    top: 20px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 70%;
+
+}
+
+
+.footer {
+    width: 40%;
+    /* height: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    position: relative;
+    top: 17px
+}
+
+.btn-buy {
+    position: relative;
+    right: 50%;
+    width: 150px;
+    top: 73px;
+    height: 40px;
+    background-color: red;
+}
+
+.btn-game {
+    position: relative;
+    left: 50%;
+    width: 150px;
+    top: 33px;
+    height: 40px;
+    background-color: aqua;
+}
+
+.btn-game-false {
+    position: relative;
+    left: 50%;
+    width: 150px;
+    top: 33px;
+    height: 40px;
+    background-color: aqua;
+    cursor: not-allowed;
+}
+
+.btn-close {
+    position: relative;
+    top: -330px;
+    right: -130px;
+    background-color: red;
+
+}
+
+.btn-edit {
+    position: relative;
+    width: 100px;
+    top: -65px;
+    left: 350px;
+    font-size: 17px;
+    padding-right: 10px;
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.price {
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    color: #333333;
+    font-family: 'Times New Roman', Times, serif
+}

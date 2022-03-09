@@ -1,0 +1,42 @@
+.Edit {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc1NRXAGlbPNws_pdW8WxipAjh-9-19cqAuQ&usqp=CAU');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif;
+    align-content: center;
+}
+
+
+
+.card-login {
+    position: relative;
+    color: aliceblue;
+    font-size: large;
+}
+
+.login_btn {
+    position: relative;
+    top: 10px;
+    height: auto;
+    right: -110px;
+
+}
+
+.form-check {
+    position: relative;
+    right: -140px;
+}
+
+.form-price {
+    position: relative;
+    top: 30px;
+
+    right: -8px;
+}
+
+.label-price {
+    position: relative;
+    top: 34px;
+}

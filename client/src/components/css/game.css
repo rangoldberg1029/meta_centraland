@@ -1,0 +1,128 @@
+.nav {
+    background-color: rgb(218, 145, 93);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem calc((100vw - 1000px) / 3);
+    z-index: 12;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logout {
+    color: black;
+    font-size: large;
+    height: 35px;
+
+}
+
+
+.GameOfLife__cell {
+    height: 3vh;
+    width: 1.999vw;
+    /* width: 12.6px;
+    height: 8px; */
+    border: 1px solid black;
+
+}
+
+
+
+.Game-cells {
+    display: flex;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.Game-col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.GameOfLife__cell--parcel-park {
+    background-color: green;
+    border: 1px none #c0c0c0;
+}
+
+.GameOfLife__cell--parcel-road {
+    background-color: rgb(128, 128, 128);
+    border: 1px none #c0c0c0;
+
+}
+
+.GameOfLife__cell--parcel-own {
+    background-color: yellow;
+}
+
+
+.GameOfLife__cell--parcel-not-sale {
+    background-color: red;
+
+
+}
+
+.GameOfLife__cell--parcel-for-sale {
+    background-color: aqua;
+
+}
+
+.GameOfLife__cell--default {
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 1px none #c0c0c0;
+
+}
+
+
+.nav-link {
+    position: relative;
+    left: 45%;
+}
+
+.legend-sale {
+    color: aqua;
+    position: relative;
+    right: 300px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.legend-unsale {
+    color: red;
+    position: relative;
+    right: 200px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.legend-park {
+    color: green;
+    position: relative;
+    right: 100px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.legend-road {
+    color: rgb(128, 128, 128);
+    position: relative;
+    right: 0px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.legend-own {
+    color: yellow;
+    position: relative;
+    right: -100px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
