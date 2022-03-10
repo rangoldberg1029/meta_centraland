@@ -31,12 +31,9 @@ const Main = () => {
         default: 0
     };
 
-
     useEffect(() => {
         initBoard();
     }, [trigger])
-
-
 
     const initBoard = () => {
         for (let i = 0; i < 50; i++) {
@@ -120,7 +117,6 @@ const Main = () => {
         }
         setSquare(tempBoard);
         setLogin(true)
-
 
     }
 
