@@ -10,7 +10,7 @@ const {
 
 const app = express();
 const PORT = 5000;
-// const CONNECTION_URL = 'mongodb+srv://ran:ran123321@cluster0.zkaeg.mongodb.net/metaCentraland';
+// mogodb username:ron, password:new1029
 const CONNECTION_URL = 'mongodb+srv://ron:new1029@cluster0.zkaeg.mongodb.net/metaCentraland';
 const db = mongoose.connection;
 
@@ -26,8 +26,6 @@ app.use(bodyParser.urlencoded({
     limit: "25mb",
     extended: true
 }));
-
-
 
 
 //conected to db
