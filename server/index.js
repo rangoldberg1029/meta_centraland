@@ -10,6 +10,7 @@ const {
 
 const app = express();
 const PORT = 5000;
+
 // mogodb username:ron, password:new1029
 const CONNECTION_URL = 'mongodb+srv://ron:new1029@cluster0.zkaeg.mongodb.net/metaCentraland';
 const db = mongoose.connection;
