@@ -38,8 +38,6 @@ const Main = () => {
 
 
 
-
-
     const initBoard = () => {
         for (let i = 0; i < 50; i++) {
             tempBoard[i] = []
@@ -75,32 +73,26 @@ const Main = () => {
     }
 
     const initRoads = () => {
-        // for (let i = 2; i < 3; i++) {
-        //     for (let j = 2; j < 20; j++) {
-        //         tempBoard[i][j].type = Type.ROAD;
-        //     }
-        // }
-        // for (let i = 46; i < 47; i++) {
-        //     for (let j = 46; j < 50; j++) {
-        //         tempBoard[i][j].type = Type.ROAD;
-        //     }
-        // }
-        // for (let i = 27; i < 28; i++) {
-        //     for (let j = 27; j < 30; j++) {
-        //         tempBoard[i][j].type = Type.ROAD;
-        //     }
-        // }
-        // for (let i = 3; i < 13; i++) {
-        //     for (let j = 40; j < 41; j++) {
-        //         tempBoard[i][j].type = Type.ROAD;
-        //     }
-        // }
-        // for (let i = 25; i < 30; i++) {
-        //     for (let j = 49; j < 50; j++) {
-        //         tempBoard[i][j].type = Type.ROAD;
-        //     }
-        // }
+        for (let i = 1; i < 3; i++) {
+            for (let j = 1; j < 3; j++) {
+                tempBoard[i][j].type = Type.ROAD;
+            }
+        }
+
+        for (let i = 24; i < 26; i++) {
+            for (let j = 24; j < 26; j++) {
+                tempBoard[i][j].type = Type.ROAD;
+            }
+        }
+
+        for (let i = 46; i < 48; i++) {
+            for (let j = 46; j < 48; j++) {
+                tempBoard[i][j].type = Type.ROAD;
+            }
+        }
+
         initNFT();
+
     }
 
     const initNFT = async () => {
@@ -124,10 +116,7 @@ const Main = () => {
                 initNFTHelper(dataPost);
 
             }
-            // await addData(0, 0, 50, 50);
-            // await addData(0, 50, 50, 100);
-            // await addData(50, 0, 100, 50);
-            // await addData(50, 50, 100, 100);
+
         }
         setSquare(tempBoard);
         setLogin(true)
@@ -136,6 +125,10 @@ const Main = () => {
     }
 
     // const addData = async (startRow, startCol, endRow, endCol) => {
+    // await addData(0, 0, 50, 50);
+    // await addData(0, 50, 50, 100);
+    // await addData(50, 0, 100, 50);
+    // await addData(50, 50, 100, 100);
     //     const parcelIndexs = [{}];
     //     for (let i = startRow; i < endRow; i++) {
     //         for (let j = startCol; j < endCol; j++) {
@@ -188,7 +181,7 @@ const Main = () => {
             } else
                 return 'parcel-for-sale'
         }
-        else if (square[cellState.rowIndex][cellState.columnIndex].type === Type.PARK) { return 'parcel-park' }
+        else if (square[cellState.rowIndex][cellState.columnIndex].type === Type.PARK) return 'parcel-park'
         else if (square[cellState.rowIndex][cellState.columnIndex].type === Type.ROAD) return 'parcel-road'
         return "default"
     }
@@ -209,10 +202,10 @@ const Main = () => {
 
     const clicked = async (rowIndex, columnIndex) => {
         if (square[rowIndex][columnIndex].type === Type.PARK) {
-            console.log('type 2')
+            console.log('type park')
             return;
         } else if (square[rowIndex][columnIndex].type === Type.ROAD) {
-            console.log('type 3')
+            console.log('type road')
             return;
         }
         else if (square[rowIndex][columnIndex].type === Type.NFT) {

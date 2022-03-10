@@ -179,7 +179,6 @@ class Parcel {
         tx1.signTransaction(mykey)
         this.block.addTransaction(tx1);
         if (this.block.isChainValid()) {
-            console.log('line 185')
             this.owner.balance = this.owner.balance + amount;
             toUser.balance = toUser.balance - amount;
             this.owner = toUser;
