@@ -58,7 +58,7 @@ router.patch('/update', async (req, res) => {
             const plot = new Parcel(par.rowIndex, par.colIndex, par.status, par.price, par.owner, blockChain)
             let oldOwner = plot.owner;
 
-            if (plot.replaceOwner(newOwner, plot.price)) {
+            if (plot.replaceOwner(newOwner, par.price)) {
                 par.owner = plot.owner;
 
                 await db.collection('parcel').updateOne({
@@ -66,7 +66,13 @@ router.patch('/update', async (req, res) => {
                     colIndex: par.colIndex
                 }, {
                     $set: {
-                        owner: par.owner
+                        owner: par.owner,
+                        block: {
+                            transaction: plot.block.pendingTransactions,
+                            previosHash: par.block.previosHash,
+                            hash: par.block.hash,
+                            nonce: par.block.nonce
+                        }
                     }
                 });
 
